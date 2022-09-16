@@ -43,7 +43,7 @@
         </v-list-item-group>
       </v-list>
       <v-row justify="end" class="mx-6 my-6 py-6">
-        <v-btn color="primary" @click="NewElement">NEW</v-btn>
+        <v-btn color="primary" @click="NewElement">ÚJ ELEM</v-btn>
       </v-row>
     </v-card>
     <list-element-dialog
@@ -67,11 +67,6 @@ export default {
     ...mapState({
       list: "list",
     }),
-  },
-  watch: {
-    selectedItem(value) {
-      console.log(value);
-    },
   },
   data() {
     return {

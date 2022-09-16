@@ -11,6 +11,9 @@ export default new Vuex.Store({
   getters: {},
   mutations: {
     setListElements(state, data) {
+
+      // Sort the elements alphabetically
+
       data = data.sort((a, b) => a.name.localeCompare(b.name));
       state.list = data;
     },

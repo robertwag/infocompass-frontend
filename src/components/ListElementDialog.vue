@@ -65,6 +65,15 @@ export default {
   },
   methods: {
     SaveChanges() {
+
+      /*
+
+        Both operations create and update are executed in this function. The right operation is chosen based on newElement variable.
+        An object check is not only advisable on the backend side, its also important on the frontend side before sending back the data.
+        The name will be checked so that no null or undefined values are sent to the backend
+
+      */
+
       if (this.text != null && this.text != undefined) {
         if (this.text.length > 0) {
           if (this.newElement === false) {
